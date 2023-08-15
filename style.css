@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    background-position: center;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+nav {
+    margin: 30px auto 0;
+    position: relative;
+    width: 70vw;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 8px;
+    font-size: 0;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    z-index: 9999;
+
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+}
+
+.start-home:hover ~ .animation {
+    width: 20%;
+    left: 0;
+    background-color: #ff8c19;
+}
+
+.start-about:hover ~ .animation {
+    width: 20%;
+    left: 20%;
+    background-color: #ff8c19;
+}
+
+.start-blog:hover ~ .animation {
+    width: 20%;
+    left: 40%;
+    background-color: rgb(42, 56, 255);
+    
+}
+
+.start-portfolio:hover ~ .animation {
+    width: 20%;
+    left: 60%;
+    background-color: #138808;
+}
+
+.start-contact:hover ~ .animation {
+    width: 20%;
+    left: 80%;
+    background-color: #138808;
+}
+.wish{
+    margin-left: 50px;
+    margin-top: 30px white inset;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    position: absolute;
+    left: 0;    
+    
+}
+.wish1{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #ff8c19;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.753)
+}
+.wish2{
+    margin-left: 140px;
+    margin-top: 0px;
+    color: rgb(73, 73, 233);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.753)
+    
+}
+.wish3{
+    margin-left: 500px;
+    margin-top: 0px;
+    color: #138808;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.753)
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.details{
+    height: 90%;
+    background: rgba(0, 0, 0,0.167);
+    width: 90%;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.651) inset;
+    border-radius: 10px;
+    display: flex;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.description h1{
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    margin-bottom: 20px;
+}
+.description p{
+    font-size: 17px;
+    text-align: justify;
+
+}
+
+  
+  /* Style for the footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+
+
+  .footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px ;
+  }
+  
+  #cancelIcon{
+    display: none;
+  }
+  #menuIcon{
+    display: none;
+  }
